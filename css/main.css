@@ -5,7 +5,7 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 244px 1fr;
+    grid-template-columns: 312px 1fr;
     grid-template-rows:  52px 108px 1fr 50px;
     grid-template-areas:
       "header header"
@@ -73,10 +73,10 @@
     background-color: #82bef6;
   }
 
-  /* Medium-sized screen breakpoint (tablet, 1050px) */
+  /* Medium-sized screen breakpoint (1200px) */
   @media only screen and (min-width: 1200px) {
     /* Break out main cards into two columns */
     .main-cards{
-      grid-template-columns: 3fr 2fr;
+      grid-template-columns: 3fr minmax(402px, 3fr) ;
   }
-  }
+  } 
